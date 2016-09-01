@@ -7,4 +7,4 @@ COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
 ENTRYPOINT ["python"]
-CMD ["manage.py runserver"]
+CMD ["./manage.py runserver"]
