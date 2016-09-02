@@ -1,22 +1,6 @@
 from . import db
 
 
-class User:
-    def __init__(self, user_id, name, email, age):
-        self.id = user_id
-        self.name = name
-        self.email = email
-        self.age = age
-
-    def to_json(self):
-        return {
-            'id': self.id,
-            'name': self.name,
-            'email': self.email,
-            'age': self.age
-        }
-
-
 class Todo(db.Model):
     __tablename__ = 'todo'
 
